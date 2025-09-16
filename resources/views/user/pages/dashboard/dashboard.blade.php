@@ -1,4 +1,8 @@
 @extends('user.layouts.app')
+@php
+    use App\Models\Resume;
+    $resume = Resume::where('user_id', Auth::id())->first();
+@endphp
 
 @push('style')
     @include('user.pages.dashboard.style.dashboard')
@@ -35,6 +39,10 @@
                         <i class="fas fa-newspaper me-2"></i>Berita
                     </a>
                 @endif
+                <a href="#" class="nav-link btn btn-outline-warning px-4" onclick="showSection('cv')"
+                    id="nav-curiculum-vitae">
+                    <i class="ti ti-file-cv"></i>CV
+                </a>
                 <a href="#" class="nav-link btn btn-outline-warning px-4" onclick="showSection('profile')"
                     id="nav-profile">
                     <i class="fas fa-user-circle me-2"></i>Profile
@@ -56,6 +64,18 @@
         <!-- Berita Content -->
         @include('user.pages.dashboard.articles.index')
 
+        {{-- resume content --}}
+        @if ($resume)
+            @include('user.pages.dashboard.resumes.show', ['resume' => $resume])
+        @else
+            <div id="cv" class="content-section mt-4 d-none">
+                <div class="card p-3">
+                    <h5 class="mb-2">You don't have a CV yet.</h5>
+                    <p class="mb-2">Silakan buat CV terlebih dahulu agar bisa melihat dan mengekspornya.</p>
+                    <a href="{{ route('resumes.create') }}" class="btn btn-primary">Create CV</a>
+                </div>
+            </div>
+        @endif
 
         <!-- Profile Content -->
         @include('user.pages.dashboard.profile.index')
@@ -85,6 +105,45 @@
         // Initialize dashboard as active section
         document.addEventListener('DOMContentLoaded', function() {
             showSection('dashboard');
+        });
+    </script>
+    <script>
+        function showSection(section) {
+            // Hide all sections
+            document.querySelectorAll('.content-section').forEach(el => {
+                el.classList.add('d-none');
+            });
+
+            // Remove active class from all nav links
+            document.querySelectorAll('.nav-link').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Show selected section if exists
+            const sectionEl = document.getElementById(section);
+            if (sectionEl) {
+                sectionEl.classList.remove('d-none');
+            }
+
+            // Add active class to clicked nav link if exists
+            const navEl = document.getElementById('nav-' + section);
+            if (navEl) {
+                navEl.classList.add('active');
+            }
+        }
+
+        // Initialize dashboard as active section
+        document.addEventListener('DOMContentLoaded', function() {
+            // baca parameter 'tab' yang dikirim dari controller (default 'dashboard')
+            const activeTab = "{{ request()->get('tab', 'dashboard') }}";
+            // pastikan ada section dengan id activeTab, kalau tidak fallback ke 'dashboard'
+            if (!document.getElementById(activeTab)) {
+                showSection('dashboard');
+            } else {
+                showSection(activeTab);
+                // Jika ingin scroll ke section:
+                // document.getElementById(activeTab).scrollIntoView({behavior: 'smooth'});
+            }
         });
     </script>
 @endsection

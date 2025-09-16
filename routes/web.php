@@ -1,14 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\SopController;
-use App\Http\Controllers\User\DashboardController as UserDashboardController;
-use App\Http\Controllers\Admin\ArticleController as AdminArticleController;
 use App\Http\Controllers\User\ArticleController;
-use App\Http\Controllers\Admin\GalleryController as AdminGalleryController;
 use App\Http\Controllers\User\GalleryController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ArticleController as AdminArticleController;
+use App\Http\Controllers\Admin\GalleryController as AdminGalleryController;
+use App\Http\Controllers\User\DashboardController as UserDashboardController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 
 Route::get('/', function () {
@@ -22,6 +23,9 @@ Route::get('/galleries/{gallery}', [GalleryController::class, 'show'])->name('ga
 Route::get('/articles', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('/articles/{article:slug}', [AdminArticleController::class, 'show'])->name('articles.show');
 
+// export resume to pdf
+Route::get('/resumes/{resume}/export', [ResumeController::class, 'exportPdf'])->name('resumes.export');
+
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [UserDashboardController::class, 'dashboardUser'])->name('dashboard.user');
     // Route::get('/dashboard', [UserDashboardController::class, 'index'])->name('dashboard');
@@ -32,7 +36,14 @@ Route::middleware('auth')->group(function () {
     // articles
     Route::resource('articles-user', ArticleController::class);
     Route::patch('articles/{article}/toggle-status', [AdminArticleController::class, 'toggleStatus'])
-            ->name('articles.toggleStatus');
+        ->name('articles.toggleStatus');
+
+    // resume
+    Route::get('/resumes/create', [ResumeController::class, 'create'])->name('resumes.create');
+    Route::post('/resumes', [ResumeController::class, 'store'])->name('resumes.store');
+    Route::get('/resumes/{resume}/edit', [ResumeController::class, 'edit'])->name('resumes.edit');
+    Route::put('/resumes/{resume}', [ResumeController::class, 'update'])->name('resumes.update');
+    Route::get('/resumes/{resume}', [ResumeController::class, 'show'])->name('resumes.show');
 
     // Admin Routes
     Route::middleware('role:admin')->prefix('admin')->name('admin.')->group(function () {
@@ -51,6 +62,10 @@ Route::middleware('auth')->group(function () {
         Route::resource('galleries', AdminGalleryController::class);
         Route::delete('galleries/images/{galleryImage}', [AdminGalleryController::class, 'destroyImage'])
             ->name('galleries.images.destroy');
+
+        // resumes
+        Route::get('resumes', [ResumeController::class, 'index'])->name('resumes.index');
+        Route::get('resumes/{resume}', [ResumeController::class, 'showAdmin'])->name('resumes.showAdmin');
 
         // sops
         Route::resource('sops', SopController::class);

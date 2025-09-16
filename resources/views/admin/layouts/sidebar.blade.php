@@ -53,6 +53,14 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
+                    <a class="sidebar-link" href="{{ route('admin.resumes.index') }}" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-file-cv"></i>
+                        </span>
+                        <span class="hide-menu">CV</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
                     <a class="sidebar-link" href="{{ route('admin.sops.index') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-description"></i>
