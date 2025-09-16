@@ -1,0 +1,90 @@
+@extends('user.layouts.app')
+
+@push('style')
+    @include('user.pages.dashboard.style.dashboard')
+@endpush
+
+@section('content')
+    <!-- Banner -->
+    <div class="banner position-relative" style="height: 200px;">
+        <div class="position-absolute bottom-0 start-0" style="transform: translateY(50%);margin-left: 8%;">
+            <div class="d-flex align-items-center">
+                <div class="profile-img rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 100px; height: 100px;">
+                    <i class="fas fa-user fs-2"></i>
+                </div>
+                <div class="ms-3">
+                    <h4 class="text-white mb-0 fw-bold">{{ Auth::user()->name }}</h4>
+                    <p class="text-light mb-0 opacity-75">{{ Auth::user()->email }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <!-- Navigation Menu -->
+        <div class="mt-5 pt-3 border-bottom border-secondary pb-3">
+            <nav class="nav gap-2">
+                <a href="#" class="nav-link btn btn-outline-warning active px-4" onclick="showSection('dashboard')"
+                    id="nav-dashboard">
+                    <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+                </a>
+                @if (Auth::user()->hasRole('redaksi'))
+                    <a href="#" class="nav-link btn btn-outline-warning px-4" onclick="showSection('berita')"
+                        id="nav-berita">
+                        <i class="fas fa-newspaper me-2"></i>Berita
+                    </a>
+                @endif
+                <a href="#" class="nav-link btn btn-outline-warning px-4" onclick="showSection('profile')"
+                    id="nav-profile">
+                    <i class="fas fa-user-circle me-2"></i>Profile
+                </a>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <a href="javascript:void(0)" class="nav-link btn btn-outline-danger px-4"
+                        onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                        <i class="fas fa-sign-out-alt me-2"></i>Logout
+                    </a>
+                </form>
+            </nav>
+        </div>
+
+        <!-- Dashboard Content -->
+        @include('user.pages.dashboard.dashboard-user.index')
+
+        <!-- Berita Content -->
+        @include('user.pages.dashboard.articles.index')
+
+
+        <!-- Profile Content -->
+        @include('user.pages.dashboard.profile.index')
+    </div>
+@endsection
+
+@section('script')
+    <script>
+        function showSection(section) {
+            // Hide all sections
+            document.querySelectorAll('.content-section').forEach(el => {
+                el.classList.add('d-none');
+            });
+
+            // Remove active class from all nav links
+            document.querySelectorAll('.nav-link').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(section).classList.remove('d-none');
+
+            // Add active class to clicked nav link
+            document.getElementById('nav-' + section).classList.add('active');
+        }
+
+        // Initialize dashboard as active section
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('dashboard');
+        });
+    </script>
+@endsection
