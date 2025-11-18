@@ -1,16 +1,24 @@
 <style>
+    /* Dashboard Theme Colors - Aligned with SMAN 1 Ponorogo brand */
     :root {
-        --background-color: #040000;
-        --default-color: #f8f8f8;
-        --heading-color: #ffffff;
-        --accent-color: #e59d02;
-        --surface-color: #191919;
-        --contrast-color: #ffffff;
+        --dashboard-primary: #1e60ee;
+        --dashboard-secondary: #ffc107;
+        --dashboard-accent: #1e3a5f;
+        --dashboard-light: #f8f9fa;
+        --dashboard-white: #ffffff;
+        --dashboard-text: #2c3e50;
+        --dashboard-text-light: #6c757d;
+        --dashboard-success: #28a745;
+        --dashboard-info: #17a2b8;
+        --dashboard-warning: #ffc107;
+        --dashboard-danger: #dc3545;
     }
 
+    /* Body & Background */
     body {
-        background-color: var(--background-color);
-        color: var(--default-color);
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        color: var(--dashboard-text);
+        font-family: 'Inter', 'Segoe UI', sans-serif;
     }
 
     .banner {
@@ -25,7 +33,11 @@
 
     .card {
         background-color: var(--surface-color);
-        border-color: rgba(229, 157, 2, 0.2);
+        border-color: rgb(30, 96, 238);
+    }
+
+    .bg-blue {
+        background-color: rgb(30, 96, 238);
     }
 
     .btn-primary {
@@ -34,13 +46,13 @@
     }
 
     .btn-primary:hover {
-        background-color: #cc8a02;
-        border-color: #cc8a02;
+        background-color: #1e60ee;
+        border-color: #1e60ee;
     }
 
     .form-control {
         background-color: var(--surface-color);
-        border-color: rgba(229, 157, 2, 0.3);
+        border-color: rgb(30, 96, 238);
         color: var(--default-color);
     }
 
@@ -48,6 +60,6 @@
         background-color: var(--surface-color);
         border-color: var(--accent-color);
         color: var(--default-color);
-        box-shadow: 0 0 0 0.2rem rgba(229, 157, 2, 0.25);
+        box-shadow: 0 0 0 0.2rem rgb(30, 96, 238);
     }
 </style>

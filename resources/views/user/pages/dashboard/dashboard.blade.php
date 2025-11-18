@@ -24,8 +24,8 @@
                     @endif
                 </div>
                 <div class="ms-3">
-                    <h4 class="text-white mb-0 fw-bold">{{ Auth::user()->name }}</h4>
-                    <p class="text-light mb-0 opacity-75">{{ Auth::user()->email }}</p>
+                    <h4 class="text-gray-800 mb-0 fw-bold">{{ Auth::user()->name }}</h4>
+                    <p class="text-gray-800 mb-0 opacity-75">{{ Auth::user()->email }}</p>
                 </div>
             </div>
         </div>

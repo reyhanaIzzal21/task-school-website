@@ -8,19 +8,18 @@
 
                 <div class="hero-main-content text-center">
                     <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="200">
-                        SMK 1 Konoha<br>
+                        SMAN 1 Ponorogo<br>
                         <span class="typed"
-                            data-typed-items="Number One School In The World,Seamless Integration,Based On Advanced Technology"></span>
+                            data-typed-items="Mencetak Generasi Berprestasi dan Berakhlak Mulia,Pendidikan Berkualitas untuk Masa Depan Gemilang,Unggul dalam Prestasi Santun dalam Budi Pekerti"></span>
                     </h1>
 
                     <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime provident praesentium sequi omnis
-                        excepturi. Odio modi assumenda magnam nulla explicabo.
+                        Mempersiapkan siswa menjadi generasi cerdas, berkarakter, dan berprestasi melalui pendidikan berkualitas dengan kurikulum yang seimbang antara akademik, karakter, dan pengembangan potensi diri.
                     </p>
 
                     <div class="hero-image-showcase" data-aos="fade-up" data-aos-delay="500">
                         <div class="image-wrapper">
-                            <img src="assets/img/about/about-18.webp" class="img-fluid" alt="Strategic Overview">
+                            <img src="assets/images/bg-hero.jpg" class="img-fluid" alt="Strategic Overview">
                             <div class="floating-card card-1" data-aos="fade-right" data-aos-delay="600">
                                 <div class="card-content">
                                     <div class="card-icon">
@@ -29,7 +28,7 @@
                                     <div class="card-info">
                                         <h4><span data-purecounter-start="0" data-purecounter-end="89"
                                                 class="purecounter"></span>%</h4>
-                                        <p>Siswa DIterima Kerja</p>
+                                        <p>Siswa Diterima PTN</p>
                                     </div>
                                 </div>
                             </div>
@@ -39,9 +38,9 @@
                                         <i class="bi bi-people"></i>
                                     </div>
                                     <div class="card-info">
-                                        <h4><span data-purecounter-start="0" data-purecounter-end="500"
+                                        <h4><span data-purecounter-start="0" data-purecounter-end="80"
                                                 class="purecounter"></span>+</h4>
-                                        <p>Guru Profesional</p>
+                                        <p>Guru Berpengalaman</p>
                                     </div>
                                 </div>
                             </div>
@@ -68,49 +67,47 @@
 
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
                     <div class="content">
-                        <h2 class="mb-4">Our Story</h2>
-                        <h5 class="mb-4">Crafting innovative solutions since 2010</h5>
+                        <h2 class="mb-4">Tentang SMAN 1 Ponorogo</h2>
+                        <h5 class="mb-4">Melahirkan generasi unggul sejak tahun 1950</h5>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel mauris in magna fringilla
-                            finibus. Suspendisse potenti. Integer ut fringilla mi, a aliquam risus. Maecenas ac nibh magna.
-                            Aenean fringilla lobortis ex, sit amet iaculis eros facilisis nec.</p>
+                        <p>SMAN 1 Ponorogo adalah lembaga pendidikan menengah atas terkemuka yang berkomitmen menghasilkan lulusan berkualitas dengan prestasi akademik tinggi dan karakter yang kuat. Kami menggabungkan pembelajaran akademis yang berkualitas dengan pembentukan karakter dan pengembangan bakat siswa secara holistik.</p>
 
                         <div class="features-list mt-5" data-aos="fade-up" data-aos-delay="400">
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <div class="feature-item">
                                         <i class="bi bi-award"></i>
-                                        <h5>Excellence</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <h5>Prestasi Gemilang</h5>
+                                        <p>Meraih berbagai penghargaan akademik dan non-akademik tingkat nasional.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="feature-item">
                                         <i class="bi bi-lightbulb"></i>
-                                        <h5>Innovation</h5>
-                                        <p>Proin vel mauris in magna fringilla finibus.</p>
+                                        <h5>Pembelajaran Inovatif</h5>
+                                        <p>Metode belajar modern yang mendorong kreativitas dan critical thinking.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="feature-item">
                                         <i class="bi bi-people"></i>
-                                        <h5>Community</h5>
-                                        <p>Suspendisse potenti. Integer ut fringilla mi.</p>
+                                        <h5>Karakter Unggul</h5>
+                                        <p>Pembentukan karakter melalui pendidikan nilai dan keagamaan.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="feature-item">
                                         <i class="bi bi-graph-up-arrow"></i>
-                                        <h5>Growth</h5>
-                                        <p>Maecenas ac nibh magna. Aenean fringilla lobortis ex.</p>
+                                        <h5>Jalur Perguruan Tinggi</h5>
+                                        <p>Bimbingan intensif untuk persiapan masuk universitas terbaik.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mt-5" data-aos="fade-up" data-aos-delay="600">
-                            <a href="#" class="btn btn-primary me-3">Learn More</a>
-                            <a href="#" class="btn btn-outline-primary">Contact Us</a>
+                            <a href="#" class="btn btn-primary me-3">Selengkapnya</a>
+                            <a href="#" class="btn btn-outline-primary">Hubungi Kami</a>
                         </div>
                     </div>
                 </div>
@@ -125,8 +122,8 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Features</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2>Keunggulan Kami</h2>
+            <p>Berbagai program dan fasilitas unggulan untuk mendukung pembelajaran optimal siswa</p>
         </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -134,21 +131,20 @@
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="150">
                     <div class="intro-content">
-                        <h2>Powerful features to accelerate growth</h2>
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris.</p>
+                        <h2>Fasilitas lengkap untuk pembelajaran maksimal</h2>
+                        <p>Kami menyediakan berbagai fasilitas modern dan lengkap untuk mendukung proses belajar mengajar yang efektif dan menyenangkan bagi seluruh siswa SMAN 1 Ponorogo.</p>
                         <div class="feature-stats">
                             <div class="stat-item">
-                                <span class="stat-number">150+</span>
-                                <span class="stat-label">Features</span>
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Ruang Kelas</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number">99.9%</span>
-                                <span class="stat-label">Uptime</span>
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Penjurusan</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">24/7</span>
-                                <span class="stat-label">Support</span>
+                                <span class="stat-label">Perpustakaan</span>
                             </div>
                         </div>
                     </div>
@@ -167,12 +163,11 @@
                         <div class="feature-icon">
                             <i class="bi bi-lightning-charge"></i>
                         </div>
-                        <h4>Lightning Fast Performance</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur excepteur sint.</p>
+                        <h4>Kurikulum Merdeka</h4>
+                        <p>Menerapkan Kurikulum Merdeka yang memberikan kebebasan siswa untuk mengeksplorasi minat dan bakatnya dengan tetap mempertahankan standar akademik yang tinggi.</p>
                         <div class="feature-tags">
-                            <span class="tag">Speed</span>
-                            <span class="tag">Optimization</span>
+                            <span class="tag">Inovatif</span>
+                            <span class="tag">Fleksibel</span>
                         </div>
                     </div>
                 </div>
@@ -183,12 +178,11 @@
                         <div class="feature-icon">
                             <i class="bi bi-shield-check"></i>
                         </div>
-                        <h4>Enterprise Security</h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum sed.</p>
+                        <h4>Program SNBP & SNBT</h4>
+                        <p>Bimbingan intensif dan terstruktur untuk mempersiapkan siswa menghadapi seleksi masuk Perguruan Tinggi Negeri melalui jalur SNBP dan SNBT dengan track record kelulusan tinggi.</p>
                         <div class="feature-tags">
-                            <span class="tag">Secure</span>
-                            <span class="tag">Protected</span>
+                            <span class="tag">PTN</span>
+                            <span class="tag">Bimbingan</span>
                         </div>
                     </div>
                 </div>
@@ -199,12 +193,11 @@
                         <div class="feature-icon">
                             <i class="bi bi-people-fill"></i>
                         </div>
-                        <h4>Team Collaboration</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <h4>Organisasi Siswa Aktif</h4>
+                        <p>OSIS, MPK, dan berbagai organisasi ekstrakurikuler yang melatih kepemimpinan, kerjasama tim, dan soft skills penting untuk masa depan siswa.</p>
                         <div class="feature-tags">
-                            <span class="tag">Teamwork</span>
-                            <span class="tag">Sync</span>
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Networking</span>
                         </div>
                     </div>
                 </div>
@@ -215,12 +208,11 @@
                         <div class="feature-icon">
                             <i class="bi bi-graph-up-arrow"></i>
                         </div>
-                        <h4>Advanced Analytics</h4>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat duis.</p>
+                        <h4>Olimpiade & Kompetisi</h4>
+                        <p>Program pembinaan khusus untuk siswa berprestasi dalam berbagai olimpiade sains, matematika, bahasa, dan kompetisi akademik lainnya tingkat nasional dan internasional.</p>
                         <div class="feature-tags">
-                            <span class="tag">Data</span>
-                            <span class="tag">Insights</span>
+                            <span class="tag">Olimpiade</span>
+                            <span class="tag">Prestasi</span>
                         </div>
                     </div>
                 </div>
@@ -231,12 +223,11 @@
                         <div class="feature-icon">
                             <i class="bi bi-gear-fill"></i>
                         </div>
-                        <h4>Smart Automation</h4>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-                            totam rem aperiam.</p>
+                        <h4>Pendidikan Karakter</h4>
+                        <p>Program pembentukan karakter terintegrasi yang menanamkan nilai-nilai luhur, kejujuran, tanggung jawab, dan akhlak mulia dalam setiap aspek pembelajaran.</p>
                         <div class="feature-tags">
-                            <span class="tag">AI</span>
-                            <span class="tag">Workflow</span>
+                            <span class="tag">Karakter</span>
+                            <span class="tag">Moral</span>
                         </div>
                     </div>
                 </div>
@@ -247,12 +238,11 @@
                         <div class="feature-icon">
                             <i class="bi bi-cloud-arrow-up"></i>
                         </div>
-                        <h4>Cloud Integration</h4>
-                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                            nemo enim ipsam.</p>
+                        <h4>Pembelajaran Digital</h4>
+                        <p>Platform e-learning modern yang memudahkan akses materi, tugas, ujian online, dan komunikasi efektif antara guru dan siswa kapan saja dan dimana saja.</p>
                         <div class="feature-tags">
-                            <span class="tag">Cloud</span>
-                            <span class="tag">Scalable</span>
+                            <span class="tag">E-Learning</span>
+                            <span class="tag">Modern</span>
                         </div>
                     </div>
                 </div>
@@ -276,8 +266,8 @@
                                 <i class="bi bi-rocket-takeoff"></i>
                             </div>
                             <div class="tab-content">
-                                <h5>Innovation</h5>
-                                <span>Cutting-edge solutions</span>
+                                <h5>Akademik</h5>
+                                <span>Pembelajaran berkualitas tinggi</span>
                             </div>
                         </a>
                     </li><!-- End tab nav item -->
@@ -288,8 +278,8 @@
                                 <i class="bi bi-shield-shaded"></i>
                             </div>
                             <div class="tab-content">
-                                <h5>Security</h5>
-                                <span>Advanced protection</span>
+                                <h5>Keamanan</h5>
+                                <span>Lingkungan aman dan nyaman</span>
                             </div>
                         </a>
                     </li><!-- End tab nav item -->
@@ -300,8 +290,8 @@
                                 <i class="bi bi-lightning-charge"></i>
                             </div>
                             <div class="tab-content">
-                                <h5>Performance</h5>
-                                <span>Lightning fast speed</span>
+                                <h5>Fasilitas</h5>
+                                <span>Sarana prasarana memadai</span>
                             </div>
                         </a>
                     </li><!-- End tab nav item -->
@@ -312,8 +302,8 @@
                                 <i class="bi bi-heart-pulse"></i>
                             </div>
                             <div class="tab-content">
-                                <h5>Support</h5>
-                                <span>24/7 assistance</span>
+                                <h5>Bimbingan</h5>
+                                <span>Konseling dan mentoring</span>
                             </div>
                         </a>
                     </li><!-- End tab nav item -->
@@ -330,45 +320,44 @@
                                     <div class="icon-badge">
                                         <i class="bi bi-rocket-takeoff"></i>
                                     </div>
-                                    <h3>Innovation Excellence</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                        laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.</p>
+                                    <h3>Keunggulan Akademik</h3>
+                                    <p>Kami berkomitmen memberikan pendidikan akademik terbaik dengan guru-guru berpengalaman dan metode pembelajaran yang efektif untuk mempersiapkan siswa meraih prestasi tinggi dan melanjutkan ke perguruan tinggi terbaik.</p>
 
                                     <div class="feature-grid">
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Excepteur sint occaecat cupidatat non proident</span>
+                                            <span>Guru berkualifikasi S1 dan S2 berpengalaman</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Sunt in culpa qui officia deserunt mollit anim</span>
+                                            <span>Kelas MIPA, IPS, dan Bahasa dengan kurikulum terkini</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>At vero eos et accusamus et iusto odio</span>
+                                            <span>Program kelas unggulan untuk siswa berprestasi</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Et harum quidem rerum facilis est et expedita</span>
+                                            <span>Try out rutin dan simulasi ujian nasional</span>
                                         </div>
                                     </div>
 
                                     <div class="stats-row">
                                         <div class="stat-item">
-                                            <div class="stat-number">99%</div>
-                                            <div class="stat-label">Uptime</div>
+                                            <div class="stat-number">98%</div>
+                                            <div class="stat-label">Kelulusan</div>
                                         </div>
                                         <div class="stat-item">
-                                            <div class="stat-number">50K+</div>
-                                            <div class="stat-label">Users</div>
+                                            <div class="stat-number">1500+</div>
+                                            <div class="stat-label">Siswa</div>
                                         </div>
                                         <div class="stat-item">
-                                            <div class="stat-number">24/7</div>
-                                            <div class="stat-label">Support</div>
+                                            <div class="stat-number">A</div>
+                                            <div class="stat-label">Akreditasi</div>
                                         </div>
                                     </div>
 
-                                    <a href="#" class="btn-primary">Learn More <i
+                                    <a href="#" class="btn-primary">Pelajari Lebih Lanjut <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -380,8 +369,8 @@
                                         <div class="floating-card">
                                             <i class="bi bi-graph-up-arrow"></i>
                                             <div class="card-content">
-                                                <span>Performance</span>
-                                                <strong>+85% Improvement</strong>
+                                                <span>Prestasi</span>
+                                                <strong>Meningkat Pesat</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -399,45 +388,44 @@
                                     <div class="icon-badge">
                                         <i class="bi bi-shield-shaded"></i>
                                     </div>
-                                    <h3>Advanced Security</h3>
-                                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci
-                                        velit sed quia non numquam eius modi tempora incidunt ut labore.</p>
+                                    <h3>Keamanan dan Kenyamanan</h3>
+                                    <p>Menciptakan lingkungan sekolah yang aman, nyaman, dan kondusif untuk belajar dengan sistem keamanan terpadu dan suasana yang mendukung perkembangan optimal setiap siswa.</p>
 
                                     <div class="feature-grid">
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Temporibus autem quibusdam et aut officiis</span>
+                                            <span>CCTV di seluruh area sekolah untuk monitoring</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Nam libero tempore cum soluta nobis</span>
+                                            <span>Petugas keamanan profesional yang berjaga</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Itaque earum rerum hic tenetur a sapiente</span>
+                                            <span>Program anti-bullying dan lingkungan positif</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Quis autem vel eum iure reprehenderit qui</span>
+                                            <span>Fasilitas UKS dengan tenaga kesehatan terlatih</span>
                                         </div>
                                     </div>
 
                                     <div class="stats-row">
                                         <div class="stat-item">
-                                            <div class="stat-number">256-bit</div>
-                                            <div class="stat-label">Encryption</div>
+                                            <div class="stat-number">24/7</div>
+                                            <div class="stat-label">Keamanan</div>
                                         </div>
                                         <div class="stat-item">
-                                            <div class="stat-number">ISO</div>
-                                            <div class="stat-label">Certified</div>
+                                            <div class="stat-number">100%</div>
+                                            <div class="stat-label">Aman</div>
                                         </div>
                                         <div class="stat-item">
-                                            <div class="stat-number">GDPR</div>
-                                            <div class="stat-label">Compliant</div>
+                                            <div class="stat-number">Nyaman</div>
+                                            <div class="stat-label">Belajar</div>
                                         </div>
                                     </div>
 
-                                    <a href="#" class="btn-primary">Learn More <i
+                                    <a href="#" class="btn-primary">Pelajari Lebih Lanjut <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -449,8 +437,8 @@
                                         <div class="floating-card">
                                             <i class="bi bi-shield-check"></i>
                                             <div class="card-content">
-                                                <span>Security</span>
-                                                <strong>Military Grade</strong>
+                                                <span>Keamanan</span>
+                                                <strong>Terjamin</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -468,45 +456,44 @@
                                     <div class="icon-badge">
                                         <i class="bi bi-lightning-charge"></i>
                                     </div>
-                                    <h3>Lightning Performance</h3>
-                                    <p>Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit
-                                        laboriosam nisi ut aliquid ex ea commodi consequatur quis autem vel.</p>
+                                    <h3>Fasilitas Lengkap</h3>
+                                    <p>Dilengkapi dengan berbagai fasilitas modern dan sarana prasarana yang memadai untuk mendukung kegiatan belajar mengajar serta pengembangan minat dan bakat siswa.</p>
 
                                     <div class="feature-grid">
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Duis aute irure dolor in reprehenderit in voluptate</span>
+                                            <span>Laboratorium IPA (Fisika, Kimia, Biologi) lengkap</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Excepteur sint occaecat cupidatat non proident</span>
+                                            <span>Laboratorium komputer dengan koneksi internet cepat</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Sunt in culpa qui officia deserunt mollit</span>
+                                            <span>Perpustakaan digital dan ruang baca nyaman</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Sed ut perspiciatis unde omnis iste natus</span>
+                                            <span>Ruang kelas ber-AC dengan LCD proyektor</span>
                                         </div>
                                     </div>
 
                                     <div class="stats-row">
                                         <div class="stat-item">
-                                            <div class="stat-number">0.5s</div>
-                                            <div class="stat-label">Load Time</div>
+                                            <div class="stat-number">15+</div>
+                                            <div class="stat-label">Lab</div>
                                         </div>
                                         <div class="stat-item">
-                                            <div class="stat-number">100%</div>
-                                            <div class="stat-label">Optimized</div>
+                                            <div class="stat-number">40+</div>
+                                            <div class="stat-label">Ruang Kelas</div>
                                         </div>
                                         <div class="stat-item">
-                                            <div class="stat-number">CDN</div>
-                                            <div class="stat-label">Global</div>
+                                            <div class="stat-number">Modern</div>
+                                            <div class="stat-label">Fasilitas</div>
                                         </div>
                                     </div>
 
-                                    <a href="#" class="btn-primary">Learn More <i
+                                    <a href="#" class="btn-primary">Pelajari Lebih Lanjut <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -518,8 +505,8 @@
                                         <div class="floating-card">
                                             <i class="bi bi-speedometer2"></i>
                                             <div class="card-content">
-                                                <span>Speed</span>
-                                                <strong>Ultra Fast</strong>
+                                                <span>Fasilitas</span>
+                                                <strong>Terlengkap</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -537,45 +524,44 @@
                                     <div class="icon-badge">
                                         <i class="bi bi-heart-pulse"></i>
                                     </div>
-                                    <h3>Premium Support</h3>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia
-                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                    <h3>Bimbingan Konseling</h3>
+                                    <p>Tim guru BK profesional siap membantu siswa dalam menghadapi berbagai tantangan akademik, sosial, maupun personal untuk mencapai potensi terbaik dan merencanakan masa depan.</p>
 
                                     <div class="feature-grid">
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Neque porro quisquam est qui dolorem ipsum</span>
+                                            <span>Konseling akademik dan pemilihan jurusan kuliah</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Quia dolor sit amet consectetur adipisci velit</span>
+                                            <span>Bimbingan karir dan perencanaan masa depan</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Sed quia non numquam eius modi tempora</span>
+                                            <span>Konseling psikologi untuk kesehatan mental</span>
                                         </div>
                                         <div class="feature-item">
                                             <i class="bi bi-check-circle-fill"></i>
-                                            <span>Incidunt ut labore et dolore magnam aliquam</span>
+                                            <span>Program motivasi dan pengembangan diri</span>
                                         </div>
                                     </div>
 
                                     <div class="stats-row">
                                         <div class="stat-item">
-                                            <div class="stat-number">24/7</div>
-                                            <div class="stat-label">Available</div>
+                                            <div class="stat-number">8</div>
+                                            <div class="stat-label">Guru BK</div>
                                         </div>
                                         <div class="stat-item">
-                                            <div class="stat-number">2min</div>
-                                            <div class="stat-label">Response</div>
+                                            <div class="stat-number">Siap</div>
+                                            <div class="stat-label">Membantu</div>
                                         </div>
                                         <div class="stat-item">
-                                            <div class="stat-number">Expert</div>
-                                            <div class="stat-label">Team</div>
+                                            <div class="stat-number">Peduli</div>
+                                            <div class="stat-label">Siswa</div>
                                         </div>
                                     </div>
 
-                                    <a href="#" class="btn-primary">Learn More <i
+                                    <a href="#" class="btn-primary">Pelajari Lebih Lanjut <i
                                             class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -587,8 +573,8 @@
                                         <div class="floating-card">
                                             <i class="bi bi-headset"></i>
                                             <div class="card-content">
-                                                <span>Support</span>
-                                                <strong>Always Here</strong>
+                                                <span>Bimbingan</span>
+                                                <strong>Selalu Ada</strong>
                                             </div>
                                         </div>
                                     </div>

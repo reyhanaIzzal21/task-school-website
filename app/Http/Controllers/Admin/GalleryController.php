@@ -36,26 +36,28 @@ class GalleryController extends Controller
      */
     public function store(CreateGalleryRequest $request)
     {
-        $validated = $request->validated();
+        try {
+            $validated = $request->validated();
 
-        // buat gallery (save minimal data)
-        $gallery = Gallery::create([
-            'title' => $validated['title'],
-            'image' => null,
-            'user_id' => Auth::id(),
-        ]);
+            $gallery = Gallery::create([
+                'title' => $validated['title'],
+                'image' => null,
+                'user_id' => Auth::id(),
+            ]);
 
-        // simpan setiap file images
-        if ($request->hasFile('images')) {
-            foreach ($request->file('images') as $file) {
-                $path = $file->store('galleries', 'public');
-                $gallery->images()->create([
-                    'image' => $path,
-                ]);
+            if ($request->hasFile('images')) {
+                foreach ($request->file('images') as $file) {
+                    $path = $file->store('galleries', 'public');
+                    $gallery->images()->create([
+                        'image' => $path,
+                    ]);
+                }
             }
-        }
 
-        return redirect()->route('admin.galleries.index')->with('success', 'Gallery berhasil ditambahkan.');
+            return redirect()->route('admin.galleries.index')->with('success', 'Gallery berhasil ditambahkan.');
+        } catch (\Exception $e) {
+            return redirect()->back()->withInput()->withErrors(['error' => 'Terjadi kesalahan saat menyimpan gallery: ' . $e->getMessage()]);
+        }
     }
 
     /**

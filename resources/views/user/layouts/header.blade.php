@@ -2,8 +2,8 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
         <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-            <img src="{{ asset('images/strd.png') }}" alt="">
-            <h1 class="sitename">STERIDA</h1>
+            <img src="{{ asset('images/logo-smaza.png') }}" alt="">
+            <h1 class="sitename">SMAN 1 Ponorogo</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -21,7 +21,7 @@
                         <li><a href="#testimonials">Testimoni Alumni</a></li>
                     </ul>
                 </li>
-                <li><a href="{{ route('majors') }}">Kopetensi Keahlian</a></li>
+                {{-- <li><a href="{{ route('majors') }}">Kopetensi Keahlian</a></li> --}}
                 <li><a href="{{ route('articles.index') }}">Berita</a></li>
                 <li><a href="{{ route('galleries.index') }}">Galeri</a></li>
             </ul>
@@ -52,10 +52,10 @@
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
-                                        <a href="javascript:void(0)" class="btn btn-outline-warning mx-3 mt-2 d-block"
+                                        <a href="javascript:void(0)" class="btn btn-outline-info mx-3 mt-2 d-block"
                                             onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                            <p class="mb-0 fs-6 text-white">Logout</p>
+                                            <p class="mb-0 fs-6 text-grey">Logout</p>
                                         </a>
                                     </form>
                                 </li>

@@ -1,5 +1,5 @@
 <div id="profile" class="content-section mt-4 d-none">
-    <h2 class="text-warning mb-4">Profil Pengguna</h2>
+    <h2 class="text-accent mb-4">Profil Pengguna</h2>
     <div class="row">
         <div class="col-md-4">
             <div class="card">
