@@ -19,7 +19,7 @@
 
                     <div class="hero-image-showcase" data-aos="fade-up" data-aos-delay="500">
                         <div class="image-wrapper">
-                            <img src="assets/images/bg-hero.jpg" class="img-fluid" alt="Strategic Overview">
+                            <img src="images/bg-hero.jpg" class="img-fluid" alt="Strategic Overview">
                             <div class="floating-card card-1" data-aos="fade-right" data-aos-delay="600">
                                 <div class="card-content">
                                     <div class="card-icon">
