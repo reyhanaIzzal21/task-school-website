@@ -45,7 +45,7 @@
                                         <td>
                                             <a href="{{ route('admin.resumes.showAdmin', $resume->id) }}"
                                                 class="btn btn-sm btn-info">View</a>
-                                            <a href="{{ route('resumes.export', $resume->id) }}"
+                                            <a href="{{ route('admin.resumes.exportInAdmin', $resume->id) }}"
                                                 class="btn btn-primary">Export to PDF</a>
                                         </td>
                                     </tr>

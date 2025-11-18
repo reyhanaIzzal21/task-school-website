@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
             ['email' => 'admin@gmail.com'],
             [
                 'name' => 'Admin',
-                'password' => Hash::make('SCHOOL-WEBSITE-admin')
+                'password' => Hash::make('SCHOOL-WEBSITE-admin'),
             ]
         );
         $admin->assignRole($adminRole);
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
             ['email' => 'redaksi@gmail.com'],
             [
                 'name' => 'Redaksi Satu',
-                'password' => Hash::make('password')
+                'password' => Hash::make('password'),
             ]
         );
         $redaksi->assignRole($redaksiRole);

@@ -32,6 +32,14 @@
                 <input type="text" name="full_name" class="form-control" required
                     value="{{ old('full_name', $resume->full_name) }}">
             </div>
+            <div class="mb-3">
+                <label class="form-label">NIK</label>
+                <input type="text" name="nik" class="form-control" value="{{ old('nik', $resume->nik) }}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Domicile</label>
+                <input type="text" name="domicile" class="form-control" value="{{ old('domicile', $resume->domicile) }}">
+            </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">

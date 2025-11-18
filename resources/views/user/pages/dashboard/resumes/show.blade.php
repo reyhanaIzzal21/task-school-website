@@ -1,5 +1,7 @@
 <div id="cv" class="content-section mt-4 d-none">
     <h1>{{ $resume->full_name }}</h1>
+    <h4>NIK: {{ $resume->nik }}</h4>
+    <h4>Domicile: {{ $resume->domicile }}</h4>
     @if ($resume->photo_path)
         <img src="{{ asset($resume->photo_path) }}" alt="photo" style="width:150px">
     @endif

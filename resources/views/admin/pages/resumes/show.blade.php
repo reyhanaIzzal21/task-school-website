@@ -5,7 +5,7 @@
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h1>CV: {{ $resume->full_name }}</h1>
             <div>
-                <a href="{{ route('resumes.export', $resume->id) }}" class="btn btn-primary">Export to PDF</a>
+                <a href="{{ route('admin.resumes.exportInAdmin', $resume->id) }}" class="btn btn-primary">Export to PDF</a>
                 <a href="{{ route('admin.resumes.index') }}" class="btn btn-secondary">Back to list</a>
             </div>
         </div>

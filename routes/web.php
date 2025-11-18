@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\ArticleController as AdminArticleController;
 use App\Http\Controllers\Admin\GalleryController as AdminGalleryController;
 use App\Http\Controllers\User\DashboardController as UserDashboardController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
 
 Route::get('/', function () {
     return view('user/pages/home/index');
@@ -30,7 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [UserDashboardController::class, 'dashboardUser'])->name('dashboard.user');
     // Route::get('/dashboard', [UserDashboardController::class, 'index'])->name('dashboard');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     // articles
@@ -50,6 +51,10 @@ Route::middleware('auth')->group(function () {
         // dashboard
         Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
 
+        // manage user
+        Route::get('users', [AdminUserController::class, 'index'])->name('users.index');
+        Route::get('users/export/csv', [AdminUserController::class, 'exportCsv'])->name('users.export.csv');
+
         // categories
         Route::resource('categories', CategoryController::class);
 
@@ -66,6 +71,7 @@ Route::middleware('auth')->group(function () {
         // resumes
         Route::get('resumes', [ResumeController::class, 'index'])->name('resumes.index');
         Route::get('resumes/{resume}', [ResumeController::class, 'showAdmin'])->name('resumes.showAdmin');
+        Route::get('resumes/{resume}/export', [ResumeController::class, 'exportPdfInAdmin'])->name('resumes.exportInAdmin');
 
         // sops
         Route::resource('sops', SopController::class);

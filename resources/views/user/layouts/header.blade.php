@@ -35,8 +35,13 @@
                         <li class="dropdown">
                             <div>
                                 <span class="me-2">{{ Auth::user()->name }}</span>
-                                <img src="{{ asset('images/dafault-avatar.jpg') }}" alt="avatar" width="35"
-                                    height="35" class="rounded-circle">
+                                @if (Auth::user()->photo)
+                                    <img src="{{ asset(Auth::user()->photo) }}" alt="Foto"
+                                        class="w-20 h-20 rounded-circle" style="width:40px; height:40px; object-fit: cover;">
+                                @else
+                                    <img src="{{ asset('images/avatar.png') }}" alt="Foto"
+                                        class="w-20 h-20 rounded-circle" style="width:40px; height:40px; object-fit: cover;">
+                                @endif
                             </div>
                             <ul>
                                 @if (Auth::user()->hasRole('admin'))

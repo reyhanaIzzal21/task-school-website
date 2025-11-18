@@ -10,6 +10,13 @@
                 <input type="text" name="full_name" value="{{ old('full_name') }}" required>
             </div>
             <div>
+                <label>NIK</label>
+                <input type="number" name="nik" value="{{ old('nik') }}" required>
+            </div>
+            <div>
+                <label>Domicile</label>
+                <input type="text" name="domicile" value="{{ old('domicile') }}">
+            <div>
                 <label>Photo</label>
                 <input type="file" name="photo" accept="image/*">
             </div>

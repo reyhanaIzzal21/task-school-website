@@ -12,6 +12,8 @@ class Resume extends Model
 
     protected $fillable = [
         'user_id',
+        'nik',
+        'domicile',
         'full_name',
         'phone',
         'email',

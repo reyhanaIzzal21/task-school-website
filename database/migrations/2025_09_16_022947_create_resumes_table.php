@@ -26,6 +26,8 @@ return new class extends Migration
             $table->json('skills')->nullable();
             $table->json('certifications')->nullable();
             $table->json('references')->nullable();
+            $table->string('nik')->unique()->nullable();
+            $table->string('domicile')->nullable();
             $table->timestamps();
         });
     }

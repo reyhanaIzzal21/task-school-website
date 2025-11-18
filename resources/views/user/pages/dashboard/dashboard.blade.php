@@ -15,7 +15,13 @@
             <div class="d-flex align-items-center">
                 <div class="profile-img rounded-circle d-flex align-items-center justify-content-center"
                     style="width: 100px; height: 100px;">
-                    <i class="fas fa-user fs-2"></i>
+                    @if (Auth::user()->photo)
+                        <img src="{{ asset(Auth::user()->photo) }}" alt="Profile Photo" class="rounded-circle"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    @else
+                        <img src="{{ asset('images/dafault-avatar.jpg') }}" alt="avatar" width="100"
+                            height="100" class="rounded-circle">
+                    @endif
                 </div>
                 <div class="ms-3">
                     <h4 class="text-white mb-0 fw-bold">{{ Auth::user()->name }}</h4>

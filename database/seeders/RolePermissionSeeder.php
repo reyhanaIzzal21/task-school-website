@@ -41,6 +41,12 @@ class RolePermissionSeeder extends Seeder
             'users.edit',
             'users.delete',
 
+            // resume
+            'resume.view',
+            'resume.create',
+            'resume.edit',
+            'resume.delete',
+
             // Settings
             'settings.manage',
         ];
@@ -68,6 +74,10 @@ class RolePermissionSeeder extends Seeder
             'articles.delete',
             'galleries.view',
             'categories.view',
+            'resume.view',
+            'resume.create',
+            'resume.edit',
+            'resume.delete',
         ];
         $redaksiRole->syncPermissions($redaksiPermissions);
 
@@ -76,6 +86,10 @@ class RolePermissionSeeder extends Seeder
             'articles.view',
             'galleries.view',
             'categories.view',
+            'resume.view',
+            'resume.create',
+            'resume.edit',
+            'resume.delete',
         ];
         $userRole->syncPermissions($userPermissions);
     }

@@ -42,6 +42,8 @@ class ResumeController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
+            'nik' => 'nullable|string|max:16|unique:resumes,nik',
+            'domicile' => 'nullable|string',
             'full_name' => 'required|string|max:255',
             'phone' => 'nullable|string|max:30',
             'email' => 'nullable|email|max:255',
@@ -132,6 +134,8 @@ class ResumeController extends Controller
 
         $resume = Resume::create([
             'user_id' => Auth::id(),
+            'nik' => $request->input('nik'),
+            'domicile' => $request->input('domicile'),
             'full_name' => $request->input('full_name'),
             'phone' => $request->input('phone'),
             'email' => $request->input('email'),
@@ -154,7 +158,6 @@ class ResumeController extends Controller
 
     public function edit(Resume $resume)
     {
-        // manual owner check (ganti authorize)
         if ($resume->user_id !== Auth::id()) {
             abort(403);
         }
@@ -170,9 +173,42 @@ class ResumeController extends Controller
         }
 
         $validatedData = $request->validate([
+            'nik' => 'nullable|string|max:16|unique:resumes,nik',
+            'domicile' => 'nullable|string',
             'full_name' => 'required|string|max:255',
             'photo' => 'nullable|image|max:2048',
             // same validation arrays as store...
+
+            'email' => 'nullable|email|max:255',
+            'address' => 'nullable|string',
+            'linkedin' => 'nullable|url',
+            'about' => 'nullable|string',
+            'photo' => 'nullable|image|max:2048',
+            // arrays from form
+            'work_title' => 'nullable|array',
+            'work_title.*' => 'nullable|string',
+            'work_company' => 'nullable|array',
+            'work_company.*' => 'nullable|string',
+            'work_location' => 'nullable|array',
+            'work_location.*' => 'nullable|string',
+            'work_start' => 'nullable|array',
+            'work_start.*' => 'nullable|string',
+            'work_end' => 'nullable|array',
+            'work_end.*' => 'nullable|string',
+
+            'edu_school' => 'nullable|array',
+            'edu_school.*' => 'nullable|string',
+            'edu_degree' => 'nullable|array',
+            'edu_degree.*' => 'nullable|string',
+            'edu_start' => 'nullable|array',
+            'edu_start.*' => 'nullable|string',
+            'edu_end' => 'nullable|array',
+            'edu_end.*' => 'nullable|string',
+
+            'skills' => 'nullable|array',
+            'certifications' => 'nullable|array',
+            'reference_name' => 'nullable|array',
+            'reference_contact' => 'nullable|array',
         ]);
 
         if ($request->hasFile('photo')) {
@@ -230,6 +266,8 @@ class ResumeController extends Controller
         $resume->educations = $educations;
         $resume->skills = $request->input('skills', []);
         $resume->certifications = $request->input('certifications', []);
+        $resume->nik = $request->input('nik');
+        $resume->domicile = $request->input('domicile');
         // references
         $references = [];
         if ($request->filled('reference_name')) {
@@ -266,7 +304,23 @@ class ResumeController extends Controller
      */
     public function destroy(Resume $resume)
     {
-        //
+        if ($resume->user_id !== Auth::id()) {
+            abort(403);
+        }
+
+        // delete photo if exists
+        if ($resume->photo_path) {
+            try {
+                Storage::delete($resume->photo_path);
+            } catch (\Exception $e) {
+                // ignore
+            }
+        }
+
+        $resume->delete();
+
+        return redirect()->route('dashboard.user', ['tab' => 'cv'])
+            ->with('success', 'Resume deleted.');
     }
 
     public function exportPdf(Resume $resume)
@@ -293,5 +347,16 @@ class ResumeController extends Controller
         return view('admin.pages.resumes.show', compact('resume'));
     }
 
+
+    public function exportPdfInAdmin(Resume $resume)
+    {
+        $resume->load('user');
+
+        $pdf = Pdf::loadView('user.pages.dashboard.resumes.pdf', compact('resume'))
+            ->setPaper('a4', 'portrait');
+
+        $filename = 'resume-' . preg_replace('/\s+/', '_', strtolower($resume->full_name)) . '.pdf';
+        return $pdf->download($filename);
+    }
     // admin section end
 }
