@@ -52,10 +52,10 @@
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
-                                        <a href="javascript:void(0)" class="btn btn-outline-info mx-3 mt-2 d-block"
+                                        <a href="javascript:void(0)" class="btn btn-getstarted mx-3 mt-2 d-block"
                                             onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                            <p class="mb-0 fs-6 text-grey">Logout</p>
+                                            <p class="mb-0 fs-6 text-white">Logout</p>
                                         </a>
                                     </form>
                                 </li>

@@ -1,4 +1,3 @@
-<!-- Stats Section -->
 <section id="stats" class="stats section light-background">
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -16,25 +15,25 @@
             <div class="col-lg-8">
                 <div class="row counters">
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <h2><span data-purecounter-start="0" data-purecounter-end="185" data-purecounter-duration="1"
+                        <h2><span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1"
                                 class="purecounter"></span>+</h2>
-                        <p>Nemo enim ipsam</p>
+                        <p>Siswa Aktif</p>
                     </div>
 
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                        <h2><span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                                class="purecounter"></span>K</h2>
-                        <p>Voluptatem sequi</p>
+                        <h2><span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1"
+                                class="purecounter"></span>+</h2>
+                        <p>Guru Berpengalaman</p>
                     </div>
 
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-                        <h2><span data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="1"
+                        <h2><span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"
                                 class="purecounter"></span>+</h2>
-                        <p>Dolor sit consectetur</p>
+                        <p>Prestasi Nasional</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-</section><!-- /Stats Section -->
+</section>

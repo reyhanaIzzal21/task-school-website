@@ -2,8 +2,9 @@
     <!-- Sidebar scroll-->
     <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-            <a href="/" class="text-nowrap logo-img">
-                <h2 class="fw-extrabold text-dark">School Website</h2>
+            <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+                <img src="{{ asset('images/logo-smaza.png') }}" alt="" class="w-10">
+                <h1 class=" m-0 fw-bold" style="font-size:1.2rem;">SMAZAPO</h1>
             </a>
             <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                 <i class="ti ti-x fs-8"></i>
@@ -33,7 +34,7 @@
                         <span>
                             <i class="ti ti-article"></i>
                         </span>
-                        <span class="hide-menu">Kategori</span>
+                        <span class="hide-menu">Kategori artikel</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
@@ -60,14 +61,14 @@
                         <span class="hide-menu">CV</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                {{-- <li class="sidebar-item">
                     <a class="sidebar-link" href="{{ route('admin.sops.index') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-description"></i>
                         </span>
                         <span class="hide-menu">SOP</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="{{ route('admin.users.index') }}" aria-expanded="false">
                         <span>

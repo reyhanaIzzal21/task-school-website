@@ -1,4 +1,3 @@
-<!-- Team Section -->
 <section id="team" class="team section">
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -6,9 +5,9 @@
         <div class="team-header" data-aos="fade-up" data-aos-delay="200">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h2>Our Professional Team</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus nec ullamcorper
-                        mattis pulvinar dapibus leo.</p>
+                    <h2>Guru & Tenaga Pendidik</h2>
+                    <p>Tim pengajar profesional dan berpengalaman yang siap membimbing siswa meraih prestasi terbaik dan
+                        mengembangkan potensi maksimal.</p>
                 </div>
                 <div class="col-lg-6 d-flex justify-content-lg-end">
                     <div class="team-controls">
@@ -21,34 +20,34 @@
 
         <div class="team-slider swiper init-swiper" data-aos="fade-up" data-aos-delay="300">
             <script type="application/json" class="swiper-config">
-                        {
-                            "loop": true,
-                            "speed": 700,
-                            "autoplay": {
-                                "delay": 5000
-                            },
-                            "slidesPerView": 1,
-                            "spaceBetween": 30,
-                            "navigation": {
-                                "nextEl": ".team-next",
-                                "prevEl": ".team-prev"
-                            },
-                            "breakpoints": {
-                                "576": {
-                                    "slidesPerView": 2,
-                                    "spaceBetween": 20
-                                },
-                                "992": {
-                                    "slidesPerView": 3,
-                                    "spaceBetween": 30
-                                },
-                                "1200": {
-                                    "slidesPerView": 4,
-                                    "spaceBetween": 30
-                                }
-                            }
+                {
+                    "loop": true,
+                    "speed": 700,
+                    "autoplay": {
+                        "delay": 5000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 30,
+                    "navigation": {
+                        "nextEl": ".team-next",
+                        "prevEl": ".team-prev"
+                    },
+                    "breakpoints": {
+                        "576": {
+                            "slidesPerView": 2,
+                            "spaceBetween": 20
+                        },
+                        "992": {
+                            "slidesPerView": 3,
+                            "spaceBetween": 30
+                        },
+                        "1200": {
+                            "slidesPerView": 4,
+                            "spaceBetween": 30
                         }
-                    </script>
+                    }
+                }
+            </script>
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
@@ -64,9 +63,10 @@
                             </div>
                         </div>
                         <div class="member-content">
-                            <h3>Marcus Wilson</h3>
-                            <span>Chief Technology Officer</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
+                            <h3>Drs. Ahmad Wijaya, M.Pd</h3>
+                            <span>Kepala Sekolah</span>
+                            <p>Memimpin dengan visi untuk menjadikan SMAN 1 Ponorogo sebagai sekolah unggul dan terdepan
+                                dalam pendidikan.</p>
                         </div>
                     </div>
                 </div><!-- End slide item -->
@@ -84,10 +84,10 @@
                             </div>
                         </div>
                         <div class="member-content">
-                            <h3>Sophia Reynolds</h3>
-                            <span>Product Designer</span>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-                            </p>
+                            <h3>Dr. Siti Nurhaliza, S.Pd</h3>
+                            <span>Guru Matematika</span>
+                            <p>Berpengalaman membimbing siswa dalam olimpiade matematika tingkat nasional dengan
+                                dedikasi tinggi.</p>
                         </div>
                     </div>
                 </div><!-- End slide item -->
@@ -105,9 +105,10 @@
                             </div>
                         </div>
                         <div class="member-content">
-                            <h3>Daniel Chen</h3>
-                            <span>Marketing Specialist</span>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            <h3>Budi Santoso, S.Si, M.Sc</h3>
+                            <span>Guru Fisika</span>
+                            <p>Lulusan master luar negeri yang mengajar dengan metode pembelajaran inovatif dan
+                                interaktif.</p>
                         </div>
                     </div>
                 </div><!-- End slide item -->
@@ -125,10 +126,10 @@
                             </div>
                         </div>
                         <div class="member-content">
-                            <h3>Olivia Thompson</h3>
-                            <span>Lead Developer</span>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-                            </p>
+                            <h3>Ratna Dewi, S.Pd, M.Pd</h3>
+                            <span>Guru Bahasa Inggris</span>
+                            <p>Memiliki sertifikasi internasional TOEFL dan aktif melatih siswa untuk kompetisi debat
+                                bahasa Inggris.</p>
                         </div>
                     </div>
                 </div><!-- End slide item -->
@@ -146,9 +147,10 @@
                             </div>
                         </div>
                         <div class="member-content">
-                            <h3>Jason Parker</h3>
-                            <span>UI/UX Designer</span>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                            <h3>Hendra Kusuma, S.Kom</h3>
+                            <span>Guru Informatika</span>
+                            <p>Praktisi IT yang membawa pengalaman industri ke dalam kelas untuk pembelajaran yang
+                                relevan.</p>
                         </div>
                     </div>
                 </div><!-- End slide item -->
@@ -166,10 +168,10 @@
                             </div>
                         </div>
                         <div class="member-content">
-                            <h3>Emily Rodriguez</h3>
-                            <span>Project Manager</span>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-                            </p>
+                            <h3>Rina Marlina, S.Pd</h3>
+                            <span>Guru Bimbingan Konseling</span>
+                            <p>Membantu siswa dalam pengembangan karir, pemilihan jurusan kuliah, dan konseling pribadi
+                                dengan pendekatan humanis.</p>
                         </div>
                     </div>
                 </div><!-- End slide item -->
@@ -178,4 +180,5 @@
         </div>
 
     </div>
-</section><!-- /Team Section -->
+</section>
+<

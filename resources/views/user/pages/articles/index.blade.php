@@ -72,7 +72,7 @@
 
                                 <!-- Button -->
                                 <a href="{{ route('articles.show', $article->slug) }}"
-                                    class="btn btn-dark btn-sm rounded-3 mt-3">
+                                    class="btn btn-primary btn-sm rounded-3 mt-3">
                                     Baca Selengkapnya →
                                 </a>
                             </div>

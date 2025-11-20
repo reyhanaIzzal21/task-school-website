@@ -61,7 +61,7 @@
             <div class="row align-items-center justify-content-between g-lg-5">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <div class="image-wrapper">
-                        <img src="assets/img/about/about-portrait-7.webp" class="img-fluid rounded" alt="About Us Image">
+                        <img src="images/olim.jpg" class="img-fluid rounded" alt="About Us Image">
                     </div>
                 </div>
 
@@ -151,7 +151,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
                     <div class="intro-image">
-                        <img src="assets/img/features/features-2.webp" alt="Features" class="img-fluid">
+                        <img src="images/dry.jpg" alt="Features" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -595,6 +595,6 @@
     @include('user.pages.home.widgets.teacher')
     @include('user.pages.home.widgets.stars')
     @include('user.pages.home.widgets.faq')
-    @include('user.pages.home.widgets.cta')
-    @include('user.pages.home.widgets.testimonial')
+    {{-- @include('user.pages.home.widgets.cta') --}}
+    {{-- @include('user.pages.home.widgets.testimonial') --}}
 @endsection

@@ -5,13 +5,13 @@
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
                     <a href="index.html" class="logo d-flex align-items-center">
-                        <span class="sitename">SMK PGRI 2 Ponorogo</span>
+                        <span class="sitename">SMAN 1 Ponorogo</span>
                     </a>
                     <div class="footer-contact pt-3">
                         <p>Jl. Jalan-jalan</p>
                         <p>Konoha, Po 535022</p>
                         <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                        <p><strong>Email:</strong> <span>SMKPGRI2Po@example.com</span></p>
+                        <p><strong>Email:</strong> <span>smazapo@example.com</span></p>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
 
             <div class="d-flex flex-column align-items-center align-items-lg-start">
                 <div>
-                    © Copyright <strong><span>SMK PGRI 2 Ponorogo</span></strong>. All Rights Reserved
+                    © Copyright <strong><span>Reyhana izzal</span></strong>. All Rights Reserved
                 </div>
             </div>
 
